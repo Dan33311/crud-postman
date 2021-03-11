@@ -1,3 +1,8 @@
+//  --  Daily Tuition  --
+//  Complete Node & Express with 5 projects - Full Course [2021]
+//  Start in 5:32:32 / 8:53:02
+
+
 const express = require('express');
 const router = express.Router();
 var tournaments = require('../database');
@@ -14,7 +19,7 @@ router.get('/:id', (req, res) => {
     const tournamentId = Number(req.params.id)
     const tournament = tournaments.find((tournament) => tournament.id === tournamentId)
     if (!tournament) {
-        res.status(500).send('tournament not found !!')
+        res.status(500).send('tournament notoooo found !!')
     } else {
         res.json(tournament)
     }
@@ -47,6 +52,7 @@ router.put('/:id', (req, res) => {
 })
 
 
+//  --  No maneja el error  -- ??
 // Delete One by ID
 router.delete('/:id', (req, res) => {
     const tournamentId = Number(req.params.id)

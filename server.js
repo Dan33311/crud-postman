@@ -1,10 +1,14 @@
 const express = require('express');
-const routes = require('./routes/router')
+const exampleOne = require('./routes/example-1');
+const exampleTwo = require('./routes/example-2');
 
 const app = express();
 
-app.use(express.urlencoded({ extended: false }))
-app.use('/', routes);
+//app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+
+//app.use('/', exampleOne);
+app.use('/users', exampleTwo);
 
 
 app.listen(3009, () => {
