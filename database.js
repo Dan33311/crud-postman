@@ -9,6 +9,12 @@ let tournaments = [{
         "title": "MADCATZ CUP",
         "game": "KOFXIV",
         "attendes": 84
+    },
+    {
+        "id": 3,
+        "title": "RUSH",
+        "game": "KOF02UM",
+        "attendes": 68
     }
 ]
 
