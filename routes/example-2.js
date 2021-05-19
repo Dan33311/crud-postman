@@ -59,9 +59,7 @@ router.patch('/:id', (req, res) => {
     if (firstName) user.firstName = firstName;
     if (lastName) user.lastName = lastName;
     if (character) user.character = character;
-    if (age) {
-        user.age = age;
-    }
+    if (age) user.age = age;
     res.send(`User with the ID: -- ${id} -- has been updated !!`)
 })
 
